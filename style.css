@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #5889bb;
+}
+.ball{
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 50%;
+  width:400px;
+  height: 400px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-animation: spin 2s infinite linear;
+  position: relative;
+  left: -50%;
+}
+@-webkit-keyframes spin {
+    100%  {-webkit-transform: rotate(0deg);}
+    0% {-webkit-transform: rotate(360deg);}
+}
+.left-container{
+  float: left;
+  display: inline-block;
+}
+.small-ball-a , .small-ball-b , .small-ball-c , .small-ball-d , .small-ball-middle{
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color:darkorange ;
+  z-index: 3;
+  position: relative;
+}
+
+.small-ball-b{
+  margin-top: 169px;
+}
+.right-container{
+  float: right;
+  display: inline-block;
+}
+
+.small-ball-d{
+  margin-top: 179px;
+}
+.middle-container{
+  display: inline-block;
+}
+.small-ball-middle{
+  margin-left:33px;
+  margin-top: 147px;
+}
+.first-line , .line-b{
+  width: 585px;
+  height: 5px;
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 205px;
+  left: -81px;
+  z-index: 2;
+}
+div.line-b{
+
+  transform: rotate(-45deg);
+  top:181px;
+}
+ 
+.ball-shadow-wrapper , .ball-wrapper{
+  position: fixed;
+  top: 89px;
+  left: 47%;
+  z-index: 1000
+}
+.ball-shadow{
+  border-radius: 50%;
+  width:400px;
+  height: 400px;
+  position: relative;
+  box-shadow: 24px 17px 0px rgba(0, 0, 0, 0.47);
+  left: -50%;
+  left: -56%;
+  top: -12px;
+}
+.ground{
+  position: absolute;
+  width: 100vw;
+  height: 125px;
+  bottom: 0;
+}
+.line-e ,.line-c, .line-f{
+ width: 115px;
+ height: 5px;
+ background-color: black;
+ position: relative;
+}
+.circle-c , .circle-e, .circle-f{
+ width: 20px;
+ height: 20px;
+ border-top: 5px solid black;
+ border-radius: 51%;
+ position: relative;
+}
+.line-e{
+ width: 203px;
+left: 132px;
+}
+.line-c{
+  left: 750px;
+  bottom: -51px;
+}
+.circle-e{
+  left: 500px;
+      top: 38px;
+}
+.line-f{
+ width: 215px;
+ left: 519px;
+ bottom: -19px;
+}
+.circle-c{
+  left: 113px;
+  bottom: -19px;
+}
+.circle-f{
+  left: 732px;
+  bottom: 19px;
+}
